@@ -1,0 +1,11 @@
+
+    <input id="inputPounds" type="number" placeholder="Pounds" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+
+<p>Grams: <span id="outputGrams"></span></p>
+
+<script>
+    function weightConverter(valNum) {
+        document.getElementById("outputGrams").innerHTML=valNum/0.0022046;
+    }
+</script>
+
